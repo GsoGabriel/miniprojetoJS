@@ -3,23 +3,29 @@
 <head>
 	<title>Miniprojeto JavaScript</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script type="text/javascript" src="mainscript.js"></script>
+	<script type="text/javascript" src="./scripts/mainscript.js"></script>
+	<script type="text/javascript" src="./scripts/SimpleImage.js"></script>
 </head>
 <body>
 	<header>
 		<h1>Miniprojeto JavaScript</h1>
-		<h2>Este é um miniprojeto desenvolvido para conclusão do curso "Programação e a Web para Iniciantes - por Duke University"</h2>
+		<p>Este é um miniprojeto desenvolvido para conclusão do curso "Programação e a Web para Iniciantes - por Duke University"</p>
 	</header>
 	<div>
-		<canvas id="can_1"></canvas>
-		<canvas id="can_2"></canvas>
+		<h2>Imagem resultado</h2>
+		<canvas id="can"></canvas>
 	</div>
 	<div>
-		<input id="" type="file" name="" onchange="fileUpload()">
-		<input id="" type="button" name="" onclick="filterGrayscale()">
-		<input id="" type="button" name="" onclick="filterRainbow()">
-		<input id="" type="button" name="" onclick="filterRed()">
-		<input id="" type="button" name="" onclick="reset()">
+		<p><h2>Upload da imagem</h2>
+			Escolher imagem: 
+			<input id="fileUpload" type="file" multiple="false" accept="image/*" onchange="fileUpload()">
+		</p>
+		<h2>Filtros</h2>
+		<input id="" type="button" name="" value="Preto e Branco" onclick="filterGrayscale()">
+		<input id="" type="button" name="" value="Inverter" onclick="filterInverse()">
+		<input id="" type="button" name="" value="Vermelho" onclick="filterRed()"><br>
+		<input id="" type="button" name="" value="Reset Original" onclick="reset()">
+		<input id="" type="button" name="" value="Limpar" onclick="reset()">
 	</div>
 </body>
 </html>

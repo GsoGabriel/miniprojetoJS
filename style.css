@@ -1,0 +1,10 @@
+body{
+	font-family: arial, sans-serif;
+	width: auto;
+	padding: 10px 25px;
+	background-color: #E0FFFF;
+}
+
+canvas{
+	width: 400px;
+}
